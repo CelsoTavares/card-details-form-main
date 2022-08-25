@@ -176,7 +176,7 @@ body {
     display: none;
 }
 /* mobile */
-@media only screen and (max-width: 375px )  {
+@media only screen and (max-width: 600px )  {
 body { 
     margin: 0;
     max-width: 375px;
