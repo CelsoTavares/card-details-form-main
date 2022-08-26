@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--color-white: hsl(0, 0%, 100%);
+--color-light-grayish-violet: hsl(270, 3%, 87%);
+--color-Dark-grayish-violet: hsl(279, 6%, 55%);
+--color-very-dark-violet: hsl(278, 68%, 11%);
+}
+body {
+    background-color: var(--color-white);
+    font-family: 'Space Grotesk', sans-serif;
+}
+.main-desktop{
+    max-width: 33%;
+}
+.container{
+    position: relative;
+    background: var(--color-white);
+    max-width: 100%;
+}
+.card-front{
+    max-width: 100%;
+}
+.picture-card-front{
+    position: absolute;
+    top: 18%;
+    left: 11%;
+}
+.inside-card-front{
+    color: var(--color-white);
+}
+.inside-card-front img{
+    position: absolute;
+    top: 10%;
+    left: 9%;
+}
+.line1{
+    position: absolute;
+    left: 9%;
+    bottom: 35%;
+    letter-spacing:  3px;
+    word-spacing: 10px;
+    font-size:  1.5rem;
+}
+.line2{
+    position: absolute;
+    left: 9%;
+    bottom: 19%;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.line3{
+    position: absolute;
+    right: 9%;
+    bottom: 19%;
+    font-size: 0.9rem; 
+    letter-spacing: 2px;
+}
+.card-back {
+width: 100%;
+}
+.picture-card-back{
+    position: absolute;
+    top: 50%;
+    left:  18%;
+   
+}
+.picture-card-back span{
+    position: absolute;
+    color: var(--color-white);
+    left: 82%;
+    top:  46%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+.dice{
+    position: absolute;
+    top: 28%;
+    left: 57%;
+  
+}
+.dice h1, h2, h3{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-very-dark-violet);
+}
+.dice input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 6%;
+    font-size: 1.1rem;
+    color: var(--color-very-dark-violet);
+    border: 1px solid var(--color-light-grayish-violet);
+}
+.dice input::placeholder{
+    opacity: 50%;
+}
+#cardholder{
+    width: 70%;
+    margin-top: 2%;
+   
+}
+#cardnumber{
+    width: 70%;
+    margin-top: 2%;
+}
+#mm {
+    width: 12%;
+   margin-top: 2%;
+    
+}
+#yy{
+    width: 12%;
+}
+#cvc{
+    width: 43%;
+    margin-left: 2%;
+}
+.date{
+ display: flex;
+ gap: 7%;
+    
+}
+#confirm{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-very-dark-violet);
+    width: 70%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin: 5% 0 20% 0;
+}
+/* thank you */
+.submit{
+    display: none;
+    position: absolute;
+    top: 40px;
+    text-align: center;
+    width: 400px;
+    letter-spacing: 1px;
+}
+
+.thank-you{
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+.message{
+    color: var(--color-Dark-grayish-violet);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#continue{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-very-dark-violet);
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-top: 20px;
+}
+.main-mobile{
+    display: none;
+}
+@media screen and (max-width: 1360px){
+.picture-card-back {
+width: 30%;   
+}
+.picture-card-front{
+width: 30%;
+}
+.line1{
+   font-size: 1.1rem;
+}
+#mm {
+   width: 15%;
+   margin-top: 2%;
+}
+#yy{
+    width: 15%;
+}
+#cvc{
+    width: 36%; 
+    margin-left: 2%; 
+}
+}
+@media screen and (max-width: 1040px){
+.inside-card-front img{
+    width: 20%;
+}
+.line1{
+    font-size: 0.9rem;
+    letter-spacing: 0;
+}
+.line2{
+    font-size: 0.7rem;
+}
+.line3{
+    font-size: 0.7rem;
+}
+.picture-card-back span{
+    top: 44%;
+    left: 75%;
+    font-size: 0.7rem;
+}
+.dice input{
+    font-size: 1rem;
+}
+.dice h1, h2, h3{
+font-size: 0.7rem;
+}
+
+}
+
+/* mobile */
+@media only screen and (max-width: 700px )  {
+
+.main-desktop{
+    display: none;
+}
+.container{
+    margin: 0;
+}
+.main-mobile{
+    display: inline-block;
+    width: 100%;
+}
+
+.picture-card-back{
+    width: 75%;
+    top: 14.5%;
+    left:  22%;
+}
+.picture-card-back span{
+    font-size: 0.9rem;
+    top: 45%;
+    left: 80%;
+}
+.card-front{
+width: 100%;
+}
+.picture-card-front{
+    width: 75%;
+    top: 50%;
+    left: 5%;
+}
+
+.line1{
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    bottom: 30%;
+}
+.line2{
+    font-size: 1.0rem;
+    bottom: 12%;
+    font-size: 1rem;
+}
+.line3{
+    right: 10%;
+    bottom: 12%;
+    font-size: 0.9rem;
+} 
+.dice{
+    top: 130%;
+    left: auto;
+    right: auto;
+    width: 90%;
+    margin: 0 5%;
+}
+.dice h1, h2, h3{
+    font-size: 0.8rem;
+    margin-left: 1%;
+    }
+#cardholder{
+    width: 98%;
+    margin-left: 1%;
+}
+#cardnumber{
+    width: 98%;
+    margin-left: 1%;
+}
+#mm {
+    width: 20%;
+    margin-left: 1%;
+}
+#yy{
+    width: 20%;
+}
+#cvc{
+    width: 54.5%; 
+}
+#confirm{
+    width: 98%;
+    margin-left: 1%;
+}
+.date{
+    gap: 17%;
+}
+}
