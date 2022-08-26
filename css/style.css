@@ -312,8 +312,8 @@ width: 100%;
 }
 }
 @media only screen and (max-width: 440px ){
-    .line1{
-        font-size: 0.9rem;    
+.line1{
+    font-size: 0.9rem;    
 }
 .line2{
     font-size: 0.7rem;
