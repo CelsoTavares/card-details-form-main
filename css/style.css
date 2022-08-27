@@ -8,6 +8,8 @@
 --color-light-grayish-violet: hsl(270, 3%, 87%);
 --color-Dark-grayish-violet: hsl(279, 6%, 55%);
 --color-very-dark-violet: hsl(278, 68%, 11%);
+--color-light-green: hsl(120, 60%, 62%);
+--color-red: hsl(0, 100%, 50%);
 }
 body {
     background-color: var(--color-white);
@@ -96,6 +98,10 @@ width: 100%;
     font-size: 1.1rem;
     color: var(--color-very-dark-violet);
     border: 1px solid var(--color-light-grayish-violet);
+    cursor: pointer;
+}
+.dice input:hover{
+    border: 1px solid var(--color-red);
 }
 .dice input::placeholder{
     opacity: 50%;
@@ -139,29 +145,40 @@ width: 100%;
     font-weight: 100;
     margin: 5% 0 20% 0;
 }
-/* thank you */
-.submit{
-    display: none;
-    position: absolute;
-    top: 40px;
-    text-align: center;
-    width: 400px;
-    letter-spacing: 1px;
+#confirm:hover{
+    color: var(--color-light-green);
 }
+/*form*/
+.form{
+    /* display: none; */
+}
+/* thank you */
+.submit-logo{
+    width: 22%;
+}
+.submit{
+
+    position: absolute;
+    display: none;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 510px;
+    top: 30px;
+    letter-spacing: 1px;
+} 
 
 .thank-you{
     font-size: 1.6rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    margin-top: 8%;
+    margin-bottom: 4%;
 
 }
 .message{
     color: var(--color-Dark-grayish-violet);
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 #continue{
-    display: inline-block;
     text-decoration: none;
     color: var(--color-white);
     background-color: var(--color-very-dark-violet);
@@ -171,12 +188,19 @@ width: 100%;
     border-radius: 5px;
     font-size: 0.9rem;
     font-weight: 100;
-    margin-top: 20px;
+    margin: 5% 0 20% 0;
+}
+#continue:hover{
+color: var(--color-light-green);
 }
 .main-mobile{
     display: none;
 }
 @media screen and (max-width: 1360px){
+.submit{
+    width: 380px;
+}
+
 .picture-card-back {
 width: 30%;   
 }
@@ -199,12 +223,15 @@ width: 30%;
 }
 }
 @media screen and (max-width: 1040px){
+.submit{
+    width: 280px;
+}
 .inside-card-front img{
     width: 20%;
 }
 .line1{
-    font-size: 0.9rem;
-    letter-spacing: 0;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
 }
 .line2{
     font-size: 0.7rem;
@@ -225,10 +252,12 @@ font-size: 0.7rem;
 }
 
 }
-
-/* mobile */
 @media only screen and (max-width: 700px )  {
-
+.submit{
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+}
 .main-desktop{
     display: none;
 }
@@ -261,7 +290,6 @@ width: 100%;
 
 .line1{
     font-size: 1.4rem;
-    letter-spacing: 3px;
     bottom: 30%;
 }
 .line2{
@@ -312,8 +340,8 @@ width: 100%;
 }
 }
 @media only screen and (max-width: 440px ){
-.line1{
-    font-size: 0.9rem;    
+    .line1{
+        font-size: 0.9rem;    
 }
 .line2{
     font-size: 0.7rem;

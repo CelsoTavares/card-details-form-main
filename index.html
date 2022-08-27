@@ -19,7 +19,7 @@
   <picture class="picture-card-back">
     <img class="card-back" src="images/bg-card-back.png" alt=" alt="card-back"> 
     <span>000</span> 
-  </picture>
+  </picture><!--picture-card-back-->
   
   <picture class="picture-card-front">
     <img class="card-front"src="images/bg-card-front.png" alt="card-front">
@@ -32,23 +32,26 @@
   </picture> <!-- picture-card-front--> 
  
   <section class="dice">
-    <h1>Cardholder Name</h1>
-    <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed"> 
+    <div class="form" >
+      <h1>Cardholder Name</h1>
+        <input type="text" id="cardholder" placeholder="e.g. Jane Appleseed"> 
+        <h2>Card Number</h2>
+        <input type="text" id="cardnumber" placeholder = "e.g. 1234 5678 9123 0000"> 
 
-    <h2>Card Number</h2>
-    <input type="text" id="cardnumber" placeholder = "e.g. 1234 5678 9123 0000"> 
-  <div class="date">
-    <h3>Exp. Date (MM/YY)</h3>
-    <h3>CVC</h3>
-  </div>
-  <div>
-    <input id="mm" placeholder="MM"> 
-    <input id="yy" placeholder="YY"> 
-    <input  id="cvc" placeholder="e.g. 123"> 
-    <p><a id = "confirm"href="#">Confirm</a></p>
-  </div>
+        <div class="date">
+          <h3>Exp. Date (MM/YY)</h3>
+          <h3>CVC</h3>
+        </div> <!--date-->
+    
+        <input id="mm" placeholder="MM"> 
+        <input id="yy" placeholder="YY"> 
+        <input  id="cvc" placeholder="e.g. 123"> 
+        <p><a id = "confirm"href="#">Confirm</a></p>
+  
+    </div> <!--form-->
+  
     <div class ="submit">
-      <img src="images/icon-complete.svg" alt="icon-complete">
+      <img class ="submit-logo"src="images/icon-complete.svg" alt="icon-complete">
       <p class ="thank-you">THANK YOU!</p>
       <p class="message">We've added your cards details</p>
      
