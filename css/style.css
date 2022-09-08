@@ -145,7 +145,7 @@ width: 100%;
     letter-spacing: 1px;
     cursor: pointer;
 }
-.confirm:hover{
+#confirm:hover{
     color: var(--color-light-green);
 }
 /* thank you */
