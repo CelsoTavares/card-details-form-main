@@ -31,8 +31,9 @@ body {
     top: 18%;
     left: 11%;
 }
-.inside-card-front{
+.inside-card-front h2{
     color: var(--color-white);
+    font-weight: 500;
 }
 .inside-card-front img{
     position: absolute;
@@ -70,7 +71,7 @@ width: 100%;
     top: 50%;
     left:  18%;
 }
-.picture-card-back span{
+.picture-card-back h2{
     position: absolute;
     color: var(--color-white);
     left: 80%;
@@ -250,7 +251,7 @@ font-size: 0.7rem;
     top: 14.5%;
     left:  22%;
 }
-.picture-card-back span{
+.picture-card-back h2{
     font-size: min(1rem, 3vw);
 }
 .card-front{
