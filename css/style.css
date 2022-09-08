@@ -78,6 +78,7 @@ width: 100%;
     top:  45%;
     font-size: min(0.9rem, 1vw);
     letter-spacing: 1px;
+    font-weight: 500;
 }
 .dice{
     position: absolute;
