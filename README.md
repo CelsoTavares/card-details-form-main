@@ -20,7 +20,7 @@
     #### Todos os inputs tem seus dados impressos na tela assim que recebem e ficaram com o *type="text"* e seus caracteres foram limitados pelo *maxLength*. Os inputs de nomes somente aceitam letras e o de números somente aceitam números. 
     #### Foi utilizado um formato especial para a impressão do cardNumber, foram utilizados media query para a responsividade da tela, as letras também ficaram responsivas com a técnica utulizada. 
     #### Tempos 2 tipos de layout o segundo aparece na tela com largura em 700px, utilizei position relative e absolute para o posicionamento dos elementos na tela, também coloque o cardBack no html antes do cardNumber para o mesmo ficar átras do outro quando o segundo layout aparecer.
-    #### Com javascript treinei bastante a manipulação do DOM, deixe as funcões ativas para transmitir os dados recebidos nos inputs, também apliquei algumas condições para os inputs.
+    #### Com javascript treinei bastante a manipulação do DOM, deixe as funcões ativas para transmitir os dados recebidos nos inputs, peguei a tecla pelo *KeyCode* e fiz um filtro com condições e o bloqueio das teclas com o uso *preventDefault*.
 * ## Tecnologias
     #### HTML, CSS e JavaScript.
 * ## Links
