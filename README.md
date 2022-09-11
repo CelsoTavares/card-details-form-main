@@ -14,8 +14,18 @@
    #### *Qualquer campo de entrada está vazio.*
    #### *O número do cartão, data de validade ou campos CVC estão no formato errado.*
 
+### 1. Design desktop.
 ![Arquivo Original](design/active-states.jpg)
->Os desafios do Frontend Mentor são perfeitos para colocar seus conhecimentos em prática.
+
+### 2. Design desktop completo.
+![Arquivo Original](https://raw.githubusercontent.com/CelsoTavares/Card-details-form-main/main/design/complete-state-desktop.jpg)
+
+### 3. Design mobile.
+![Arquivo Original](https://raw.githubusercontent.com/CelsoTavares/Card-details-form-main/main/design/mobile-design.jpg)
+
+### 4. Design mobile completo.
+![Arquivo Original](https://raw.githubusercontent.com/CelsoTavares/Card-details-form-main/main/design/complete-state-mobile.jpg)
+
 * ## Sobre 
     #### *Todos os inputs tem seus dados impressos na tela assim que recebem e ficaram com o *type="text"* e seus caracteres foram limitados pelo *maxLength*. Os inputs de nomes somente aceitam letras e o de números somente aceitam números.* 
     #### *Foi utilizado um formato especial para a impressão do cardNumber, foram utilizados media query para a responsividade da tela, as letras também ficaram responsivas com a técnica utulizada.* 
