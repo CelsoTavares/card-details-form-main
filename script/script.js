@@ -44,7 +44,7 @@ function run(){
         }
     }
     
-function format (mask , document) {
+function format (mask, document) {
       
     var i = document.value.length ;
     var exit = mask.substring (0,1);
