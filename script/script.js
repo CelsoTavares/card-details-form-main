@@ -15,18 +15,29 @@ let inputCVC = document.querySelector("#cvc");
 
 
 function run(){ 
-    if( inputCardHolder.value.length == 0 || inputCardNumber.value.length == 0 || inputMM.value.length == 0 || inputYY.value.length == 0 || inputCVC.value.length == 0){
+    if( inputCardHolder.value.length == 0 || 
+       inputCardNumber.value.length == 0 || 
+       inputMM.value.length == 0 || 
+       inputYY.value.length == 0 || 
+       inputCVC.value.length == 0){
+        
         alert("[Erro] Preencha o campo vazio.");
+    
     } else if ( inputCardHolder.value.length == 1){
         alert("Cardholder Name: Mínimo de 2 letras.")
+    
     } else if( inputCardNumber.value.length < 19){
         alert("Card Number: Mínimo de 16 números.")
+    
     } else if( inputMM.value.length < 2){
         alert("MM: Mínimo de 2 números.")
+    
     } else if( inputYY.value.length < 2){
         alert("YY: Mínimo de 2 números.")
+    
     } else if( inputCVC.value.length < 3){
         alert("CVC: Mínimo de 3 números.")
+    
     } else {
         del.style.display = "none";
         visible.style.display = "flex";
