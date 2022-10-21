@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
 <title>Frontend Mentor | Interactive card details form</title>
 </head>
-<body>
+  <body>
   
-  <main class="container">
-    <img class= "main-mobile"src="images/bg-main-mobile.png" alt="main-mobile">
-    <img class = "main-desktop" src="images/bg-main-desktop.png" alt="bg-main-desktop">
+    <main class="container">
+      <img class= "main-mobile"src="images/bg-main-mobile.png" alt="main-mobile">
+      <img class = "main-desktop" src="images/bg-main-desktop.png" alt="bg-main-desktop">
   
     <section class="picture-card-back">
       <img class="card-back" src="images/bg-card-back.png" alt="card-back"> 
@@ -23,18 +24,22 @@
   
     <section class="picture-card-front">
       <img class="card-front"src="images/bg-card-front.png" alt="card-front">
+      
       <div class ="inside-card-front">
         <img src="images/card-logo.svg" alt="card-front-logo">
         <h2 class="line1">0000 0000 0000 0000</h2>
         <h2 class="line2">Jane Appleseed</h2>
         <h2 class="line3">00/00</h2>
       </div><!--inside-card-front-->
-    </section> <!-- picture-card-front--> 
+    
+     </section> <!-- picture-card-front--> 
  
-    <section class="dice">
-      <div class="form" >
-        <h1>Cardholder Name</h1>
+      <section class="dice">
+        <div class="form" >
+          
+          <h1>Cardholder Name</h1>
           <input type="text" maxlength="26" id="cardHolder" placeholder="e.g. Jane Appleseed"> 
+          
           <h2>Card Number</h2>
           <input type="text" maxlength="19" id="cardNumber" placeholder = "e.g. 1234 5678 9123 0000" required onkeypress="format('0000 0000 0000 0000', this)"> 
 
@@ -43,20 +48,20 @@
             <h3>CVC</h3>
           </div> <!--date-->
     
-          <input type="text"  maxlength="2" id="mm" placeholder="MM"> 
-          <input type="text"  maxlength="2" id="yy" placeholder="YY"> 
-          <input type="text"  maxlength="3" id="cvc" placeholder="e.g. 123"> 
-          <button type="submit"  id ="confirm">Confirm</button>
+            <input type="text"  maxlength="2" id="mm" placeholder="MM"> 
+            <input type="text"  maxlength="2" id="yy" placeholder="YY"> 
+            <input type="text"  maxlength="3" id="cvc" placeholder="e.g. 123"> 
+            <button type="submit"  id ="confirm">Confirm</button>
   
-      </div> <!--form-->
+          </div> <!--form-->
   
         <div class ="submit">
           <img class ="submit-logo"src="images/icon-complete.svg" alt="icon-complete">
           <p class ="thank-you">THANK YOU!</p>
           <p class="message">We've added your cards details</p>
-     
-        <button id="continue">Continue</button>
+          <button id="continue">Continue</button>
       </div> <!--submit-->
+    
     </section><!--dice-->
 </main> <!--container-->
 <script defer src="script/script.js"></script>  
