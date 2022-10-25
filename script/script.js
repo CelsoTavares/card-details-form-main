@@ -87,6 +87,7 @@ inputCardHolder.addEventListener("keypress",(a) =>{
         a.preventDefault();
     }
 });	
+
 function checkCharName(a){
     const char1 = String.fromCharCode(a.keyCode); 
     console.log(a.keyCode); 
@@ -101,6 +102,7 @@ inputCardNumber.addEventListener("keypress",(b) =>{
         b.preventDefault();
     }
 });	
+
 function checkCharNumber(b){
     const char2 = String.fromCharCode(b.keyCode);   
     const pattern2 = "[0-9]";
@@ -114,6 +116,7 @@ inputMM.addEventListener("keypress",(c) =>{
         c.preventDefault();
     }
 });
+
 function checkCharMM(c){
     const char3 = String.fromCharCode(c.keyCode);   
     const pattern3 = "[0-9]";
@@ -127,6 +130,7 @@ inputYY.addEventListener("keypress",(d) =>{
         d.preventDefault();
     }
 });
+
 function checkCharYY(d){
     const char4 = String.fromCharCode(d.keyCode);   
     const pattern4 = "[0-9]";
@@ -140,6 +144,7 @@ inputCVC.addEventListener("keypress", (e) =>{
         e.preventDefault();
     }
 });
+
 function checkCharCVC(e){
     const char5 = String.fromCharCode(e.keyCode);   
     const pattern5 = "[0-9]";
