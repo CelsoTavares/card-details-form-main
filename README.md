@@ -42,7 +42,7 @@ Com javascript treinei bastante a manipulação do DOM, deixe as funcões ativas
 
 ## Links
 
-#### [Projeto](https://celsotavares.github.io/Card-details-form-main/)
+#### [Projeto](https://card-details-form-main-ntwawen1z-celsotavares.vercel.app/)
 #### [Frontend Mentor](https://www.frontendmentor.io/profile/CelsoTavares)
     
 ## Autor
